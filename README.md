@@ -32,8 +32,12 @@ Create folders for each webcam footage, with their title as "Movie.mov" or anyth
 Change folder name in 'frame.sh', 'eye_angles.py' and 'head_angles.py' accordingly.
 ```bash
 sh frame.sh
+cd HeadPoseEstimation-WHENet-yolov4-onnx-openvino
 python3 head_angles.py
+cd ..
+cd mobile-face-gaze
 python3 eye_angles.py
+cd ..
 ```
 
 Clean data from 'Photos/data.txt' and 'Photos/eyes.txt' for each folder and export as CSVs in 'AI-Proctoring/', in the following order and include this as first line of CSVs.
