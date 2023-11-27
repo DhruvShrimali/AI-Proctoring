@@ -23,7 +23,7 @@ rf_model = RandomForestClassifier()
 svm_model = SVC()
 lr_model = LogisticRegression(solver='lbfgs', max_iter=2000)
 nn_model = MLPClassifier(max_iter=1000)
-dt_model = DecisionTreeClassifier(ccp_alpha=0.1)
+dt_model = DecisionTreeClassifier(ccp_alpha=0.00001)
 xgb_model = XGBClassifier()
 gb_model = GradientBoostingClassifier()
 
@@ -62,7 +62,6 @@ accuracies = {
     'Decision Tree': dt_accuracy,
     'XGB Classifier': xgb_accuracy,
     'Gradient Boost': gb_accuracy
-
 }
 
 best_model = max(accuracies, key=accuracies.get)
