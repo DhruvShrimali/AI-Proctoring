@@ -4,13 +4,13 @@ Ten CSV files, each containing data from a different person, were created, resul
 
 ## Results
 <ul>
-<li>RandomForestClassifier: 99.62%</li>
-<li>SVC (Support Vector Classifier): 96.73%</li>
-<li>LogisticRegression: 90.44%</li>
-<li>MLPClassifier (Multi-layer Perceptron Classifier): 99.61%</li>
-<li>DecisionTreeClassifier: 96.01%</li>
-<li>XGBClassifier (XGBoost Classifier): 99.78%</li>
-<li>GradientBoostingClassifier: 99.07%</li>
+<li>RandomForestClassifier: 99.49% - 4m 44s</li>
+<li>SVC (Support Vector Classifier): 96.78% - 24m 34s</li>
+<li>LogisticRegression: 95.05% - 2m 45s</li>
+<li>MLPClassifier (Multi-layer Perceptron Classifier): 99.65% - 5m 15s</li>
+<li>DecisionTreeClassifier: 98.19% - 2m 52s</li>
+<li>XGBClassifier (XGBoost Classifier): 99.69% - 26s</li>
+<li>GradientBoostingClassifier: 97.64% - 36m 15s</li>
 </ul>
 
 ### Model Comparison:
