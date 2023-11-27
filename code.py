@@ -21,7 +21,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Step 3: Train Models
 rf_model = RandomForestClassifier()
 svm_model = SVC()
-lr_model = LogisticRegression(solver='lbfgs', max_iter=1000)
+lr_model = LogisticRegression(solver='lbfgs', max_iter=2000)
 nn_model = MLPClassifier(max_iter=1000)
 dt_model = DecisionTreeClassifier(ccp_alpha=0.1)
 xgb_model = XGBClassifier()
