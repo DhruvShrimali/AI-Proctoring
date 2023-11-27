@@ -3,13 +3,15 @@ The objective of this project is to develop a simplified Online Exam Proctoring 
 Ten CSV files, each containing data from a different person, were created, resulting in a total of more than 100,000 labelled data rows. These individual files were combined into one comprehensive CSV, which served as the input for training various machine learning models.
 
 ## Results
-RandomForestClassifier: 99.62%<br>
-SVC (Support Vector Classifier): 96.73%<br>
-LogisticRegression: 90.44%<br>
-MLPClassifier (Multi-layer Perceptron Classifier): 99.61%<br>
-DecisionTreeClassifier: 96.01%<br>
-XGBClassifier (XGBoost Classifier): 99.78%<br>
-GradientBoostingClassifier: 99.07%<br>
+<ul>
+<li>RandomForestClassifier: 99.62%</li>
+<li>SVC (Support Vector Classifier): 96.73%</li>
+<li>LogisticRegression: 90.44%</li>
+<li>MLPClassifier (Multi-layer Perceptron Classifier): 99.61%</li>
+<li>DecisionTreeClassifier: 96.01%</li>
+<li>XGBClassifier (XGBoost Classifier): 99.78%</li>
+<li>GradientBoostingClassifier: 99.07%</li>
+</ul>
 
 ### Model Comparison:
 The models were assessed based on both speed/time efficiency and accuracy. Among the models, the XGBClassifier emerged as the most efficient in terms of processing speed while maintaining a satisfactory level of accuracy for head pose angles and eye gaze estimation.
@@ -40,7 +42,7 @@ python3 eye_angles.py
 cd ..
 ```
 
-Clean data from 'Photos/data.txt' and 'Photos/eyes.txt' for each folder and export as CSVs in 'AI-Proctoring/', in the following order and include this as first line of CSVs.<br>
+Clean data from 'Photos/data.txt' and 'Photos/eyes.txt' for each folder and export as CSVs in 'AI-Proctoring/', in the following order and include this as first line of CSVs:<br>
 H_Roll, H_Pitch, H_Yaw, E_Pitch, E_Yaw, Cheat<br>
 Run the following for each CSV (Change title in code)<br>
 Make sure to set "header=True" for one CSV
