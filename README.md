@@ -14,7 +14,7 @@ Ten CSV files, each containing data from a different person, were created, resul
 </ul>
 
 ### Model Comparison:
-The models were assessed based on both speed/time efficiency and accuracy. Among the models, the XGBClassifier emerged as the most efficient in terms of processing speed while maintaining the highest accuracy for head pose angles and eye gaze estimation.
+The models were assessed based on both speed/time efficiency and accuracy. Among the models, the XGBClassifier emerged as the most efficient in terms of processing speed while maintaining the highest accuracy detecting cheating using head pose angles and eye gaze estimation.
 ### Feasibility Considerations:
 While the models exhibited promising performance, it's crucial to acknowledge the practical constraints. The current GitHub repositories for obtaining head pose angles and eye gaze estimation have limitations in terms of data acquisition speed. These repositories can capture data at a maximum rate of 3 frames per second, significantly lower than the typical 30 frames per second of webcam video. Additionally, the pipeline involves data processing and machine learning model inference, contributing to further latency.
 ### Active Cheating Detection:
@@ -57,8 +57,8 @@ python3 code.py
 ```
 
 ## Credits
-Salil Godbole - https://github.com/Rogerbenett<br>
 Dhruv Shrimali - https://github.com/DhruvShrimali<br>
+Salil Godbole - https://github.com/Rogerbenett<br>
 Thanks to HeadPoseEstimation-WHENet-yolov4-onnx-openvino: https://github.com/PINTO0309<br>
 Thanks to mobile-face-gaze: https://github.com/glefundes
 
